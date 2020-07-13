@@ -1,4 +1,4 @@
-require_relative '../lib/04_simon_says'
+require_relative '../lib/04_simon_says.rb'
 
 describe "Simon says" do
   describe "echo" do
@@ -21,14 +21,14 @@ describe "Simon says" do
     end
   end
 
-  describe "repeat" do
-    it "should repeat" do
-      expect(repeat("hello")).to eq("hello hello")
+ describe "repeat" do
+  it "should repeat" do
+     expect(repeat("hello")).to eq("hello hello")
     end
 
     # Wait a second! How can you make the "repeat" method
     # take one *or* two arguments?
-    #
+    
     # Hint: *default values* https://www.skorks.com/2009/08/method-arguments-in-ruby/
     it "should repeat a number of times" do
       expect(repeat("hello", 3)).to eq("hello hello hello")

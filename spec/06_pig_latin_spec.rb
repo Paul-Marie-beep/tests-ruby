@@ -1,4 +1,4 @@
-require_relative '../lib/06_pig_latin'
+require_relative '../lib/06_pig_latin.rb'
 
 describe "#translate" do
 
